@@ -30,13 +30,24 @@
         background-color: black;
         color: white;
       }
+
+      .row {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .space-out {
+        justify-content: space-between;
+      }
     </style>
   </head>
   <body>
-    <header>
+    <header class="row space-out">
       <a href="/" aria-label="Home">🐹</a>
       <nav>
-        <ul>
+        <ul class="row space-out">
           <li><a href="#about">About</a></li>
           <li><a href="#work">Work</a></li>
           <li><a href="#blog">Blog</a></li>
